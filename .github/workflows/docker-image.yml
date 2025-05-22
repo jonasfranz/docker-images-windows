@@ -38,7 +38,7 @@ jobs:
       - name: Build and Push
         shell: powershell
         run: |
-          docker build . -t ${{ env.REGISTRY }}/${{ env.IMAGE_NAME}}:2022
+          docker build windowsservercore -t ${{ env.REGISTRY }}/${{ env.IMAGE_NAME}}:2022
           docker push ${{ env.REGISTRY }}/${{ env.IMAGE_NAME}}:2022
 
       - name: Generate artifact attestation
