@@ -1,6 +1,6 @@
 # Base image on microsoft/dotnet-framework:4.7.1 or later as adviced by Microsoft.
 # https://docs.microsoft.com/en-us/visualstudio/install/build-tools-container-issues
-FROM mcr.microsoft.com/dotnet/framework/runtime:4.8-windowsservercore-ltsc2019
+FROM mcr.microsoft.com/dotnet/framework/runtime:4.8-windowsservercore-ltsc2022
 
 RUN powershell -NoLogo -NoProfile -Command \
     netsh interface ipv4 show interfaces ; \
